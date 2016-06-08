@@ -1,12 +1,27 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="${relativePackage}.${activityClass}" >
+    android:orientation="vertical"
+    >
 
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/hello_world" />
+        android:id="@+id/tv_load_memory"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:textSize="20dip"
+        android:gravity="center"
+        android:text="Bitmap在内存中的加载"
+        android:background="#22ff0000" />
+    
+    
+    <TextView
+        android:layout_marginTop="10dip"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:textSize="20dip"
+        android:gravity="center"
+        android:text="Bitmap.createBitmap方法"
+        android:background="#22ff0000" />
 
-</RelativeLayout>
+</LinearLayout>
